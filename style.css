@@ -1,6 +1,4 @@
-/* ==========================================================================
-   RESET & SYSTEM VARIABLE DECLARATIONS
-   ========================================================================== */
+/* RESET & SYSTEM VARIABLE DECLARATIONS */
 * {
     margin: 0;
     padding: 0;
@@ -80,9 +78,7 @@ body {
     border: none;
 }
 
-/* ==========================================================================
-   HEADER / NAVIGATION COMPONENT
-   ========================================================================== */
+/* HEADER / NAVIGATION COMPONENT */
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid var(--border);
@@ -148,16 +144,14 @@ body {
     background-color: var(--blue-hover); 
 }
 
-/* --- Mobile Toggle UI Elements Base Layout Rules --- */
+/* Mobile Toggle UI Elements */
 .toggle-checkbox, 
 .hamburger-button, 
 .mobile-actions-wrapper {
     display: none;
 }
 
-/* ==========================================================================
-   HERO LAYOUT BLOCK
-   ========================================================================== */
+/* HERO LAYOUT */
 .hero {
     padding: 90px 0 70px 0;
     text-align: center;
@@ -222,9 +216,7 @@ body {
     margin-top: 14px;
 }
 
-/* ==========================================================================
-   MAIN INTEGRATED FRAME ARCHITECTURE (TINT BACKGROUND #F8FAFC)
-   ========================================================================== */
+/* MAIN FRAME ARCHITECTURE */
 .main-content {
     background-color: var(--tint);
     padding: 80px 0;
@@ -387,9 +379,7 @@ body {
     background-color: var(--blue-hover); 
 }
 
-/* ==========================================================================
-   VISUALIZE MODULE
-   ========================================================================== */
+/* VISUALIZE MODULE */
 .visualize-section {
     padding: 85px 0;
     border-top: 1px solid var(--border);
@@ -452,9 +442,7 @@ body {
     line-height: 1.6; 
 }
 
-/* ==========================================================================
-   TESTIMONIALS SECTION
-   ========================================================================== */
+/* TESTIMONIALS SECTION */
 .testimonials { 
     padding: 85px 0; 
     background: #ffffff; 
@@ -487,9 +475,7 @@ body {
     color: var(--muted); 
 }
 
-/* ==========================================================================
-   PRICING PLAN MATRIX COMPONENT
-   ========================================================================== */
+/* PRICING PLAN MATRIX COMPONENT */
 .pricing-section {
     padding: 85px 0;
     background-color: #ffffff;
@@ -600,9 +586,7 @@ body {
     color: #ffffff; 
 }
 
-/* ==========================================================================
-   FOOTER SECTION
-   ========================================================================== */
+/*FOOTER SECTION */
 .footer {
     border-top: 1px solid var(--border);
     background: var(--tint);
@@ -684,9 +668,7 @@ body {
     color: var(--blue); 
 }
 
-/* ==========================================================================
-   MEDIA DISPATCH RESPONSIVENESS
-   ========================================================================== */
+/* MEDIA DISPATCH RESPONSIVENESS */
 @media (max-width: 992px) {
     .pricing-card.pricing-popular { 
         transform: none; 
@@ -702,7 +684,7 @@ body {
         grid-template-columns: 1fr; 
     }
 
-    /* 1. Layout Adjustments for Navbar Wrapper */
+    /* Layout Adjustments for Navbar Wrapper */
     .navigation-box {
         position: relative;
         justify-content: space-between;
@@ -713,7 +695,7 @@ body {
         display: none;
     }
 
-    /* 2. Style and Expose Hamburger Button Trigger */
+    /* Style and Expose Hamburger Button Trigger */
     .hamburger-button {
         display: flex;
         align-items: center;
@@ -731,13 +713,13 @@ body {
         display: none; 
     }
 
-    /* 3. Transform Navbar List into Mobile Slider Panel */
+    /* Transform Navbar List into Mobile Slider Panel */
     .navigation-menu {
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 65px;
-        left: -100%; /* Initially hidden off-canvas */
+        left: -100%; 
         width: 100%;
         height: calc(100vh - 65px);
         background-color: #ffffff;
@@ -760,7 +742,7 @@ body {
         width: 100%;
     }
 
-    /* 4. Append inside Mobile Navigation Drawer Actions */
+    /* Drawer Actions */
     .mobile-actions-wrapper {
         display: block;
         border-bottom: none !important;
@@ -778,12 +760,12 @@ body {
         width: 100%;
     }
 
-    /* 5. Handle Slide Open Logic using Pure CSS General Sibling Trigger */
+    /* Handle Slide Open Logic */
     .toggle-checkbox:checked ~ .navigation-menu {
         left: 0;
     }
 
-    /* Swap visible icons on active menu toggle status */
+    /* Swap visible icons */
     .toggle-checkbox:checked ~ .hamburger-button .bar-open { display: none; }
     .toggle-checkbox:checked ~ .hamburger-button .bar-close { display: block; }
 }
